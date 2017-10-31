@@ -1,4 +1,4 @@
-# problem solving tasks with my solutions to them in Python
+# problem solving tasks 
 
 This repository contains problem solving tasks which I tried to do while learning Python.
 The tasks are taken mainly from:
