@@ -3,8 +3,8 @@
 This repository contains problem solving tasks which I tried to do while learning Python.
 The tasks are taken mainly from:
 
-* Codewars: https://www.codewars.com/users/Kat-kateryna
-* Adventofcode: https://adventofcode.com/2015/
+* [Codewars](https://www.codewars.com/users/Kat-kateryna)
+* [Adventofcode](https://adventofcode.com/2015/)
 
 ### [Codewars Ranking](http://www.codewars.com/about)
 ```
