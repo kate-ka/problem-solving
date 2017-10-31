@@ -32,18 +32,12 @@ def my_groupby_2(iterable, key):
         grouped.append(item)
 
     results.append((prev_key, grouped))
-
-
-        # results.append((k, value))
-        # results.append((prev_key, []))
-        # results[key(prev_key)].append(item)
-
-
-
-
-
     return results
 
+
+# results.append((k, value))
+# results.append((prev_key, []))
+# results[key(prev_key)].append(item)
 
 countries = [
     ['USA', 'New York', 4534, 2016],
@@ -83,12 +77,10 @@ data = [
 # ]
 
 
-
-
-# 1 сгрупировать по стране
-# 2. сгрупировать по стране и году
-# 3. сгрупировать по городу
-# 4 сгрупировать по стране и городу
+# 1 group by country
+# 2. group by country and year
+# 3. group by city
+# 4 group by country and city
 
 # print my_groupby(countries, lambda item: (item[0], item[3]))
 
@@ -108,17 +100,6 @@ data = [
 # list((k, list(g)) for k, g in groupby(countries, lambda x: (x[0], x[3])) )
 # [(('USA', 2016), [['USA', 'New York', 4534, 2016], ['USA', 'Dallas', 444, 2016]]), (('USA', 2015), [['USA', 'Dallas', 345, 2015], ['USA', 'Denver', 533, 2015], ['USA', 'Kansas', 555, 2015], ['USA', 'New York', 4454, 2015]]), (('Ukraine', 2016), [['Ukraine', 'Kyiv', 55, 2016]]), (('Ukraine', 2015), [['Ukraine', 'Kyiv', 44, 2015]]), (('Ukraine', 2016), [['Ukraine', 'Lviv', 34, 2016]]), (('Ukraine', 2015), [['Ukraine', 'Lviv', 22, 2015]])]
 
-# https://habrahabr.ru/post/85459/
-# https://habrahabr.ru/post/111588/
-# https://pythonworld.ru/tipy-dannyx-v-python/slovari-dict-funkcii-i-metody-slovarej.html
-# http://www.python-course.eu/dictionaries.php
-# http://codeguida.com/post/426/
-# http://codeguida.com/post/399/
-# https://web.archive.org/web/20130810230937/http://zephyrfalcon.org/labs/python_pitfalls.html
-# https://habrahabr.ru/company/1cloud/blog/309018/
-# http://codeguida.com/post/316/
-# https://habrahabr.ru/post/85459/
-# http://pythoner.name/links-objects
 
 def unique_everseen(iterable, key=None):
     "List unique elements, preserving order. Remember all elements ever seen."
@@ -166,6 +147,7 @@ def unique_justseen(iterable, key=None):
     return map(next, map(itemgetter(1), groupby(iterable, key)))
 
 # print (list((unique_justseen('ABBCcAD', str.lower))))
+
 
 def my_unique_justseen(iterable, key=None):
     prev_item = iterable[0]

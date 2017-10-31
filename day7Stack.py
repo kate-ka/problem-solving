@@ -23,7 +23,8 @@ def operation_not(a):
 
 
 def parse_command(str_to_parse):
-    var_one, command, var_two = re.search( '^([a-z0-9]+)?\s?(AND|OR|LSHIFT|RSHIFT|NOT)?\s?([a-z0-9]+)?$',str_to_parse).groups()
+    var_one, command, var_two = re.search(
+        '^([a-z0-9]+)?\s?(AND|OR|LSHIFT|RSHIFT|NOT)?\s?([a-z0-9]+)?$',str_to_parse).groups()
     return var_one, var_two, command
 
 
@@ -114,7 +115,7 @@ def calculate(item_to_calculate):
 
 
 
-print calculate('a')
+# print calculate('a')
 
 
 
